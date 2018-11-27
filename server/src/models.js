@@ -36,7 +36,7 @@ class TooManyRecordsError extends Error {
 }
 
 function handleError(err, entity) {
-  switch (err.code) {
+  switch (err.errno) {
     case DUPLICATE_KEY_ERR_CODE:
       return Promise.reject(new DuplicateKeyError(entity, err));
     default:

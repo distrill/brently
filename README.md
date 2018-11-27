@@ -1,4 +1,4 @@
-send highcharts data here and browse.  
+send highcharts data here and browse at http://brently.bhindustries.ca.  
 example with request-promise.
 
 ```javascript

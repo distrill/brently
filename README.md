@@ -4,16 +4,14 @@ example with request-promise.
 ```javascript
 const rp = require('request-promise');
 
-const highchartsConfigObject = {
-  // any valid highcharts config
-};
-
 const options = {
   method: 'POST',
   uri: 'http://api.brently.bhindustries.ca/plots',
   body: {
     name: 'look at my sweet sweet data',
-    config: highchartsConfigObject,
+    config: {
+      // any valid highcharts config
+    },
   },
   json: true,
 };
